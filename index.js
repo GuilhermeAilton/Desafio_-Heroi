@@ -1,8 +1,6 @@
-// Função para determinar o nível do herói
+
 function determinarNivel(nome, xp) {
     let nivel;
-
-    // Estrutura de decisão para determinar o nível com base na XP
     if (xp < 1000) {
         nivel = "Ferro";
     } else if (xp >= 1001 && xp <= 2000) {
@@ -21,13 +19,10 @@ function determinarNivel(nome, xp) {
         nivel = "Radiante";
     }
 
-    // Exibir a mensagem final
     console.log(`O Herói de nome ${nome} está no nível de ${nivel}.`);
 }
 
-// Solicitar o nome e a quantidade de XP do herói
 const nome = 'guilherme';
 const xp = parseInt(4)
 
-// Chamar a função para determinar o nível
 determinarNivel(nome, xp);
